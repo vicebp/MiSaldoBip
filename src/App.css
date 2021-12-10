@@ -12,9 +12,9 @@
 
 }
 .title{
+  font-family: 'TT Commons' ;
   font-weight: 900;
   font-size: 3rem;
-
   color:#06D6A0;
   padding: 1.5rem;
 
@@ -42,10 +42,12 @@
   cursor: pointer;
 }
 .selector__bip__activo{
-  color: #06D6A0;
+  /* color: #06D6A0; */
+  font-family: 'Bold TT Commons';
 }
 .selector__tne__activo{
-  color: #06D6A0;
+  /* color: #06D6A0; */
+  font-family: 'Bold TT Commons';
 
 }
 .selector__tne__activo:hover{

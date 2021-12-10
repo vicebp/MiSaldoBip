@@ -10,3 +10,9 @@
    url("fonts/ttcommons/TT-Commons-Bold.otf") format("truetype");
   font-weight: 900;
   }
+@font-face {
+  font-family: "Bold TT Commons";
+  src: local("ttcommons"),
+   url("fonts/ttcommons/TT-Commons-Bold.otf") format("truetype");
+  font-weight: 900;
+  }
