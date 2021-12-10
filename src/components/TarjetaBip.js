@@ -1,20 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "antd/dist/antd.css";
 
 import { SearchOutlined, NumberOutlined } from "@ant-design/icons";
-import { message, Form, Input, Button, Spin } from "antd";
+import { message, Form, Input, Button } from "antd";
 
 import axios from "axios";
 import ReactLoading from "react-loading";
 
 function TarjetaBip() {
-  const [idTarjeta, setIdTarjeta] = useState();
   const [saldo, setSaldo] = useState(0);
   const [loadingSaldo, setLoadingSaldo] = useState(false);
-  // useEffect(()=>{
-  //
-  // })
-  console.log(idTarjeta);
+
   const onFinish = (values) => {
     setLoadingSaldo(true);
     axios
@@ -22,7 +18,12 @@ function TarjetaBip() {
       .then(function (response) {
         message.success(response.data.status_description);
         setLoadingSaldo(false);
-        setSaldo(response.data.balance);
+        let api_response = new Intl.NumberFormat(["ban", "id"]).format(
+          response.data.balance
+        );
+        console.log(response.data.balance);
+        console.log(api_response);
+        setSaldo(api_response);
       })
       .catch(function (error) {
         // handle error
@@ -45,7 +46,7 @@ function TarjetaBip() {
               <ReactLoading />
             </div>
           ) : (
-            "Saldo: " + saldo
+            "Saldo: $" + saldo
           )}
         </div>
       </div>
