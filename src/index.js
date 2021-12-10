@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import "./fonts/ttcommons/TT-Commons-ExtraLight.otf";
 import "./fonts/ttcommons/TT-Commons-Bold.otf";
 
-import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Bip from "./routes/bip";

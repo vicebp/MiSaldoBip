@@ -1,18 +1,18 @@
 @font-face {
   font-family: "TT Commons";
   src: local("ttcommons"),
-   url("fonts/ttcommons/TT-Commons-ExtraLight.otf") format("truetype");
+   url("fonts/ttcommons/TT-Commons-ExtraLight.otf") format("otf");
   font-weight: bold;
   }
 @font-face {
   font-family: "TT Commons";
   src: local("ttcommons"),
-   url("fonts/ttcommons/TT-Commons-Bold.otf") format("truetype");
+   url("fonts/ttcommons/TT-Commons-Bold.otf") format("otf");
   font-weight: 900;
   }
 @font-face {
   font-family: "Bold TT Commons";
   src: local("ttcommons"),
-   url("fonts/ttcommons/TT-Commons-Bold.otf") format("truetype");
+   url("fonts/ttcommons/TT-Commons-Bold.otf") format("otf");
   font-weight: 900;
   }

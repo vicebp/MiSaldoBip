@@ -17,6 +17,21 @@
   .bip{
     margin-right:6.5rem !important;
   }
+  .background{
+    animation-duration: 1.2s;
+  animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
  
 }
 .navbar{
@@ -27,7 +42,7 @@
   margin-bottom: -3rem;
 }
 .title{
-  font-family: 'TT Commons' ;
+  
   font-weight: 900;
   font-size: 3rem;
   color:#06D6A0;
@@ -44,13 +59,17 @@
 .about:hover{
   cursor: pointer;
 }
-
-
 .selector__tarjeta{
   display: flex;
   flex-direction: row;
   padding-left: 3.5rem;
   font-size: 2rem;
+}
+.selector__bip{
+  font-weight: lighter;
+}
+.selector__tne{
+  font-weight: lighter;
 }
 .selector__bip:hover{
   cursor: pointer;
@@ -59,12 +78,11 @@
   cursor: pointer;
 }
 .selector__bip__activo{
-  /* color: #06D6A0; */
-  font-family: 'Bold TT Commons';
+  font-weight: 900;
 }
 .selector__tne__activo{
-  /* color: #06D6A0; */
-  font-family: 'Bold TT Commons';
+
+  font-weight: 900;
 
 }
 .selector__tne__activo:hover{
@@ -81,11 +99,13 @@
 }
 
 .background{
+  
   position: flex;
   padding-top: 2rem;
   justify-content: center;
   align-items: center;
 }
+
 
 .bip{
   border: 1px solid #285ea1;
