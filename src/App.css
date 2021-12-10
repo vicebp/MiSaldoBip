@@ -4,12 +4,17 @@
   padding: 0;
   font-family: "TT Commons";
 }
+@media (max-width: 1024px) {
+  #root{
+    width: 124vw;
+  }
+}
 .navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 2rem;
-
+  margin-bottom: -3rem;
 }
 .title{
   font-family: 'TT Commons' ;
@@ -131,4 +136,6 @@ text-align: center;
   text-align: center;
   color: #fff;
 }
-
+.spinner{
+  padding-left: 5.8rem;
+}
