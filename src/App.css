@@ -5,9 +5,19 @@
   font-family: "TT Commons";
 }
 @media (max-width: 1024px) {
-  #root{
+  /* #root{
     width: 124vw;
+  } */
+  .about{
+    display:none;
   }
+  .background-form{
+    width:25rem !important;
+  }
+  .bip{
+    margin-right:6.5rem !important;
+  }
+ 
 }
 .navbar{
   display: flex;
@@ -71,7 +81,6 @@
 }
 
 .background{
-
   position: flex;
   padding-top: 2rem;
   justify-content: center;
@@ -87,7 +96,6 @@
   height: 12.3rem;
   background-color: #2D6AB7;
   margin-left:3.4rem;
-
 }   
 .borde{
   
@@ -131,7 +139,7 @@ text-align: center;
 .bip__number{
   margin-left: 20px ;
   font-family: 'TT Commons' ;
-  margin-top: -8rem !important;
+  margin-top: -8.5rem !important;
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
