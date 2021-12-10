@@ -8,6 +8,7 @@ import axios from "axios";
 import ReactLoading from "react-loading";
 
 function TarjetaBip() {
+  const [numTarjeta, setNumTarjeta] = useState("12345XXX");
   const [saldo, setSaldo] = useState(0);
   const [loadingSaldo, setLoadingSaldo] = useState(false);
 
@@ -34,7 +35,13 @@ function TarjetaBip() {
   return (
     <div className="background">
       <div className="background-form"></div>
-      <div className="borde"></div>
+      <div className="borde">
+        <div className="num_tarjeta__container">
+          <p className="num_tarjeta">
+            N˚ Tarjeta <span className="cuadro">{numTarjeta}</span>
+          </p>
+        </div>
+      </div>
       <div className="bip">
         <div className="bip__content">
           <p className="bip-text">bip!</p>
@@ -55,6 +62,7 @@ function TarjetaBip() {
         <Form onFinish={onFinish}>
           <Form.Item name="numero_bip">
             <Input
+              // onChange={(e) => setNumTarjeta(e.target.value)}
               prefix={
                 <NumberOutlined
                   className="site-form-item-icon"

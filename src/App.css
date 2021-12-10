@@ -147,6 +147,22 @@ text-align: center;
 .spinner{
   padding-left: 5.8rem;
 }
+.num_tarjeta__container{
+  position: fixed;
+  margin-left: 13.9rem;
+  margin-top: 5.5rem;
+}
+.num_tarjeta{
+  position: fixed;
+  color: #49A6E5;
+  font-weight: 900;
+  font-size: 1rem;
+  transform: rotate(90deg);
+
+}
+.cuadro{
+  border: 1px solid red;
+}
 /* Deshabilitar autofocus */
 @media screen and (device-aspect-ratio: 2/3) {
   select, textarea, input[type="text"], input[type="password"],
