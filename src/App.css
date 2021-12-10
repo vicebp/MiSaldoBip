@@ -168,12 +168,13 @@ text-align: center;
   padding-left: 5.8rem;
 }
 .num_tarjeta__container{
-  position: fixed;
-  margin-left: 13.9rem;
-  margin-top: 5.5rem;
+  width: 10rem;
+  /* position: absolute; */
+  margin-left: 13.3rem;
+  margin-top: 6.2rem;
 }
 .num_tarjeta{
-  position: fixed;
+  /* position: fixed; */
   color: #49A6E5;
   font-weight: 900;
   font-size: 1rem;
