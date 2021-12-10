@@ -29,6 +29,8 @@
 .about:hover{
   cursor: pointer;
 }
+
+
 .selector__tarjeta{
   display: flex;
   flex-direction: row;
@@ -63,12 +65,70 @@
   align-items: center;
 }
 
+.background{
+
+  position: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .bip{
-  width: 23rem;
+  border: 1px solid #285ea1;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 10px;
+  margin-top: -12.3rem !important;
+  width: 17rem;
+  height: 12.3rem;
+  background-color: #2D6AB7;
+  margin-left:3.4rem;
+
+}   
+.borde{
+  
+  margin-top: -24rem !important;
+  border: 1px solid #285ea1;
+  background-color: #ffffff;
+  width: 20rem;
   height: 12.3rem;
   border-radius: 16px;
-  background-color: #2D6AB7;
+  margin: 0 auto;
+  box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.3);
+}
+.background-form{
+
+  margin-top: 5rem !important;
+  margin: 0 auto;
+  width: 27rem;
+  height: 18rem;
+  border-radius: 3px;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d1d1d1;
+  
+}
+.form{
+  margin-top: 3rem !important;
+  width: 23rem;
+  height: 12.3rem;
+  margin: 0 auto;
+text-align: center;
+}
+
+.bip-text{
+  margin-left: 20px ;
+  font-weight: 900;
+  font-size: 6.5rem;
+  color:#F1A93A;
+  text-align: center;
 }
 .bip__number{
-  /* background-color: #FFF; */
+  margin-left: 20px ;
+  font-family: 'TT Commons' ;
+  margin-top: -8rem !important;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
 }
+
