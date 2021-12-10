@@ -6,9 +6,19 @@ import reportWebVitals from "./reportWebVitals";
 import "./fonts/ttcommons/TT-Commons-ExtraLight.otf";
 import "./fonts/ttcommons/TT-Commons-Bold.otf";
 
+import { render } from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Bip from "./routes/bip";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="bip" element={<Bip />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

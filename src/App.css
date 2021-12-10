@@ -9,8 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 2rem;
-  /* padding-left: 2rem; */
-  /* background-color: aqua; */
+
 }
 .title{
   font-weight: 900;
@@ -29,7 +28,6 @@
 }
 .about:hover{
   cursor: pointer;
-  /* font-weight: 500; */
 }
 .selector__tarjeta{
   display: flex;
@@ -40,7 +38,20 @@
 .selector__bip:hover{
   cursor: pointer;
 }
-.selector__pase:hover{
+.selector__bip__activo:hover{
+  cursor: pointer;
+}
+.selector__bip__activo{
+  color: #06D6A0;
+}
+.selector__tne__activo{
+  color: #06D6A0;
+
+}
+.selector__tne__activo:hover{
+  cursor: pointer;
+}
+.selector__tne:hover{
   cursor: pointer;
 }
 .page__content{

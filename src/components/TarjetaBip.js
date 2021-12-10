@@ -1,6 +1,6 @@
 import React from "react";
 
-function Bip() {
+function TarjetaBip() {
   return (
     <div className="bip">
       <div className="bip__content">
@@ -11,4 +11,4 @@ function Bip() {
   );
 }
 
-export default Bip;
+export default TarjetaBip;
