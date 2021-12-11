@@ -16,20 +16,29 @@
   }
   .bip{
     margin-right:6.5rem !important;
-  }
-  .background{
     animation-duration: 0.3s;
   animation-name: slidein;
   }
+  .borde{
+    animation-duration: 0.3s;
+  animation-name: slidein;
+  
+}
+.tne{
+    animation-duration: 0.3s;
+    animation-name: slidein;
+
+  }
+  
   @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 300%
+      /* width: 300% */
     }
   
     to {
       margin-left: 0%;
-      width: 100%;
+      /* width: 100%; */
     }
   }
  
