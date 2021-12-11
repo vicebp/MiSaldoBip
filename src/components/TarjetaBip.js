@@ -12,6 +12,7 @@ function TarjetaBip() {
   const [saldo, setSaldo] = useState(0);
   const [loadingSaldo, setLoadingSaldo] = useState(false);
 
+  const [datosbip, setDatosBip] = useState("");
   const onFinish = (values) => {
     setLoadingSaldo(true);
     axios
@@ -22,8 +23,7 @@ function TarjetaBip() {
         let api_response = new Intl.NumberFormat(["ban", "id"]).format(
           response.data.balance
         );
-        console.log(response.data.balance);
-        console.log(api_response);
+
         setSaldo(api_response);
       })
       .catch(function (error) {
@@ -59,10 +59,19 @@ function TarjetaBip() {
       </div>
 
       <div className="form">
-        <Form onFinish={onFinish}>
-          <Form.Item name="numero_bip">
+        <Form onFinish={onFinish} autoComplete="off">
+          <Form.Item
+            name="numero_bip"
+            rules={[
+              {
+                required: true,
+                message: "Por favor ingrese su número de tarjeta",
+              },
+              { whitespace: true },
+            ]}
+            hasFeedback
+          >
             <Input
-              // onChange={(e) => setNumTarjeta(e.target.value)}
               prefix={
                 <NumberOutlined
                   className="site-form-item-icon"
