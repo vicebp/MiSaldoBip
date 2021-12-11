@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./fonts/ttcommons/TT-Commons-ExtraLight.otf";
 import "./fonts/ttcommons/TT-Commons-Bold.otf";
+import "./fonts/ttcommons/TT-Commons-Medium.otf";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

@@ -45,6 +45,18 @@ function App() {
         </h3>
       </div>
       <div className="page__content">{bipSelector && <TarjetaBip />}</div>
+      <footer className="footer">
+        <p>
+          Creado con {"<3"} por{" "}
+          <a className="rrss" href="https://github.com/sergiolv">
+            @SergioLV
+          </a>{" "}
+          y{" "}
+          <a className="rrss" href="https://github.com/vicebp">
+            @ViceBp
+          </a>{" "}
+        </p>
+      </footer>
     </div>
   );
 }

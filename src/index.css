@@ -16,3 +16,10 @@
    url("fonts/ttcommons/TT-Commons-Bold.otf") format("truetype");
   font-weight: 900;
   }
+  @font-face {
+    font-family: "Medium TTC";
+    src: local("ttcommons"),
+     url("fonts/ttcommons/TT-Commons-Medium.otf") format("truetype");
+    font-weight: 900;
+    }
+  

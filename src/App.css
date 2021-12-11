@@ -184,6 +184,22 @@ text-align: center;
 .cuadro{
   border: 1px solid red;
 }
+.footer{
+  position:absolute;
+  bottom: 0;
+  padding-left: 3rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.footer p{
+  font-family: "Medium TTC" !important;
+}
+.footer a{
+  font-family: "Medium TTC" !important;
+  color: #06D6A0 !important;
+  text-decoration: none;
+}
 /* Deshabilitar autofocus */
 @media screen and (device-aspect-ratio: 2/3) {
   select, textarea, input[type="text"], input[type="password"],
