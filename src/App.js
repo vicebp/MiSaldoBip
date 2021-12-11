@@ -1,5 +1,6 @@
 import "./App.css";
 import TarjetaBip from "./components/TarjetaBip";
+import TarjetaTNE from "./components/TarjetaTNE";
 import { useState } from "react";
 
 function App() {
@@ -44,7 +45,9 @@ function App() {
           Pase
         </h3>
       </div>
-      <div className="page__content">{bipSelector && <TarjetaBip />}</div>
+      <div className="page__content">
+        {bipSelector ? <TarjetaBip /> : <TarjetaTNE />}
+      </div>
     </div>
   );
 }
