@@ -50,7 +50,6 @@ function App() {
         {bipSelector ? <TarjetaBip /> : <TarjetaTNE />}
       </div>
 
-      <div className="page__content">{bipSelector && <TarjetaBip />}</div>
       <footer className="footer">
         <p>
           Creado con {"<3"} por{" "}
