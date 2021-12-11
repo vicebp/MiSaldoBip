@@ -12,7 +12,6 @@ function TarjetaBip() {
   const [saldo, setSaldo] = useState(0);
   const [loadingSaldo, setLoadingSaldo] = useState(false);
 
-  const [datosbip, setDatosBip] = useState("");
   const onFinish = (values) => {
     setLoadingSaldo(true);
     axios
