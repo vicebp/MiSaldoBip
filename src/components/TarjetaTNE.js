@@ -100,7 +100,7 @@ function TarjetaTNE() {
                   style={{ color: "grey" }}
                 />
               }
-              placeholder="Ingrese número de tarjeta"
+              placeholder="Ingresa número de tarjeta"
             ></Input>
           </Form.Item>
           <Form.Item>

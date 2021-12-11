@@ -18,7 +18,7 @@
     margin-right:6.5rem !important;
   }
   .background{
-    animation-duration: 1.2s;
+    animation-duration: 0.5s;
   animation-name: slidein;
   }
   @keyframes slidein {
@@ -63,13 +63,19 @@
   display: flex;
   flex-direction: row;
   padding-left: 3.5rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .selector__bip{
   font-weight: lighter;
 }
 .selector__tne{
   font-weight: lighter;
+}
+.selector__paradero{
+  font-weight: lighter;
+}
+.selector__paradero__activo:hover{
+  cursor: pointer;
 }
 .selector__bip:hover{
   cursor: pointer;
@@ -81,9 +87,11 @@
   font-weight: 900;
 }
 .selector__tne__activo{
-
   font-weight: 900;
-
+}
+.selector__paradero__activo{
+  
+font-weight: 900;
 }
 .selector__tne__activo:hover{
   cursor: pointer;
@@ -91,8 +99,11 @@
 .selector__tne:hover{
   cursor: pointer;
 }
+.selector__paradero{
+  cursor: pointer;
+}
 .page__content{
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +116,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .bip{
   border: 1px solid #285ea1;

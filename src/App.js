@@ -1,6 +1,7 @@
 import "./App.css";
 import TarjetaBip from "./components/TarjetaBip";
 import TarjetaTNE from "./components/TarjetaTNE";
+import Paraderos from "./components/Paraderos";
 import { useState } from "react";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     if (bipSelector) {
       setBipSelector(true);
     } else {
+      setParaderoSelector(false);
       setTneSelector(false);
       setBipSelector(true);
     }
@@ -16,12 +18,23 @@ function App() {
     if (tneSelector) {
       setTneSelector(true);
     } else {
+      setParaderoSelector(false);
       setBipSelector(false);
       setTneSelector(true);
     }
   };
+  const handlerSelectorParadero = () => {
+    if (paraderoSelector) {
+      setParaderoSelector(true);
+    } else {
+      setBipSelector(false);
+      setTneSelector(false);
+      setParaderoSelector(true);
+    }
+  };
   const [bipSelector, setBipSelector] = useState(true);
   const [tneSelector, setTneSelector] = useState(false);
+  const [paraderoSelector, setParaderoSelector] = useState(false);
   return (
     <div className="App">
       <div className="navbar">
@@ -44,10 +57,23 @@ function App() {
         >
           Pase
         </h3>
+        <span>|</span>
+        <h3
+          className={
+            paraderoSelector
+              ? "selector__paradero__activo"
+              : "selector__paradero"
+          }
+          onClick={() => handlerSelectorParadero()}
+        >
+          Paraderos
+        </h3>
       </div>
 
       <div className="page__content">
-        {bipSelector ? <TarjetaBip /> : <TarjetaTNE />}
+        {bipSelector && <TarjetaBip />}
+        {tneSelector && <TarjetaTNE />}
+        {paraderoSelector && <Paraderos />}
       </div>
 
       <footer className="footer">
