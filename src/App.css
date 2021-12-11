@@ -16,16 +16,16 @@
   }
   .bip{
     margin-right:6.5rem !important;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
   animation-name: slidein;
   }
   .borde{
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
   animation-name: slidein;
   
 }
 .tne{
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
     animation-name: slidein;
 
   }
