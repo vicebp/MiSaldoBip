@@ -50,7 +50,7 @@ function Paraderos() {
       </div>
       <div className="redbus">
         <div className="bip__content">
-          <p className="bip-text">RedBus</p>
+          <p className="redbus-text">RedBus</p>
         </div>
         <div className="bip__number">
           {/* {" "}

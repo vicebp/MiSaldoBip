@@ -395,7 +395,8 @@
 .redbus-text {
   margin-left: 20px;
   font-weight: 900;
-  font-size: 5rem;
+  margin-top: 1.5rem;
+  font-size: 5.55rem;
   color: #fff;
   text-align: center;
 }
