@@ -1,29 +1,36 @@
 import React, { useState } from "react";
+import ParaderosView from "./ParaderosView";
 import "antd/dist/antd.css";
 
 import { SearchOutlined, NumberOutlined } from "@ant-design/icons";
-import { message, Form, Input, Button, Timeline } from "antd";
+import { message, Form, Input, Button } from "antd";
 
 import axios from "axios";
 import ReactLoading from "react-loading";
 
 function Paraderos() {
   const [numTarjeta, setNumTarjeta] = useState("12345XXX");
-  const [saldo, setSaldo] = useState(0);
+
+  const [paradas, setParadas] = useState([]);
+  const [paradero, setParadero] = useState("");
+  const [isParadas, setIsParadas] = useState(false);
+
   const [loadingSaldo, setLoadingSaldo] = useState(false);
 
   const onFinish = (values) => {
     setLoadingSaldo(true);
     axios
-      .get("https://api.xor.cl/red/balance/".concat(values.numero_bip))
+      .get("https://api.xor.cl/red/bus-stop/".concat(values.paradero))
       .then(function (response) {
         message.success(response.data.status_description);
-        setLoadingSaldo(false);
-        let api_response = new Intl.NumberFormat(["ban", "id"]).format(
-          response.data.balance
-        );
+        // let api_response = new Intl.NumberFormat(["ban", "id"]).format(
+        //   response.data.balance
+        // );
+        setParadero(values.paradero);
 
-        setSaldo(api_response);
+        setParadas(response.data);
+        setIsParadas(true);
+        setLoadingSaldo(false);
       })
       .catch(function (error) {
         // handle error
@@ -46,21 +53,20 @@ function Paraderos() {
           <p className="bip-text">bip!</p>
         </div>
         <div className="bip__number">
-          {" "}
+          {/* {" "}
           {loadingSaldo ? (
             <div className="spinner">
               <ReactLoading />
             </div>
           ) : (
             "Saldo: $" + saldo
-          )}
+          )} */}
         </div>
       </div>
-
       <div className="form">
         <Form onFinish={onFinish} autoComplete="off">
           <Form.Item
-            name="numero_bip"
+            name="paradero"
             rules={[
               {
                 required: true,
@@ -91,35 +97,8 @@ function Paraderos() {
             </Button>
           </Form.Item>
         </Form>
-      </div>
-      <Timeline>
-        <Timeline.Item color="green">
-          Create a services site 2015-09-01
-        </Timeline.Item>
-        <Timeline.Item color="green">
-          Create a services site 2015-09-01
-        </Timeline.Item>
-        <Timeline.Item color="red">
-          <p>Solve initial network problems 1</p>
-          <p>Solve initial network problems 2</p>
-          <p>Solve initial network problems 3 2015-09-01</p>
-        </Timeline.Item>
-        <Timeline.Item>
-          <p>Technical testing 1</p>
-          <p>Technical testing 2</p>
-          <p>Technical testing 3 2015-09-01</p>
-        </Timeline.Item>
-        <Timeline.Item color="gray">
-          <p>Technical testing 1</p>
-          <p>Technical testing 2</p>
-          <p>Technical testing 3 2015-09-01</p>
-        </Timeline.Item>
-        <Timeline.Item color="gray">
-          <p>Technical testing 1</p>
-          <p>Technical testing 2</p>
-          <p>Technical testing 3 2015-09-01</p>
-        </Timeline.Item>
-      </Timeline>
+      </div>{" "}
+      {isParadas && <ParaderosView paradero={paradero} paradas={paradas} />}
     </div>
   );
 }

@@ -76,7 +76,7 @@ function App() {
         {paraderoSelector && <Paraderos />}
       </div>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         <p>
           Creado con {"<3"} por{" "}
           <a className="rrss" href="https://github.com/sergiolv">
@@ -87,7 +87,7 @@ function App() {
             @ViceBp
           </a>{" "}
         </p>
-      </footer>
+      </footer> */}
     </div>
   );
 }

@@ -8,136 +8,128 @@
   /* #root{
     width: 124vw;
   } */
-  .about{
-    display:none;
+  .about {
+    display: none;
   }
-  .background-form{
-    width:25rem !important;
+  .background-form {
+    width: 25rem !important;
   }
-  .bip{
-    margin-right:6.5rem !important;
-    animation-duration: 0.5s;
-  animation-name: slidein;
-  }
-  .borde{
-    animation-duration: 0.5s;
-  animation-name: slidein;
-  
-}
-.tne{
+  .bip {
+    margin-right: 6.5rem !important;
     animation-duration: 0.5s;
     animation-name: slidein;
-
   }
-  
+  .borde {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+  }
+  .tne {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+  }
+
   @keyframes slidein {
     from {
       margin-left: 100%;
       /* width: 300% */
     }
-  
+
     to {
       margin-left: 0%;
       /* width: 100%; */
     }
   }
- 
 }
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 2rem;
   margin-bottom: -3rem;
 }
-.title{
-  
+.title {
   font-weight: 900;
   font-size: 3rem;
-  color:#06D6A0;
+  color: #06d6a0;
   padding: 1.5rem;
-
 }
-.title:hover{
+.title:hover {
   cursor: pointer;
 }
-.about{
-  padding:3rem ;
+.about {
+  padding: 3rem;
   font-size: 1.5rem;
 }
-.about:hover{
+.about:hover {
   cursor: pointer;
 }
-.selector__tarjeta{
+.selector__tarjeta {
   display: flex;
   flex-direction: row;
   padding-left: 3.5rem;
   font-size: 1.3rem;
 }
-.selector__bip{
+.selector__bip {
   font-weight: lighter;
 }
-.selector__tne{
+.selector__tne {
   font-weight: lighter;
 }
-.selector__paradero{
+.selector__paradero {
   font-weight: lighter;
 }
-.selector__paradero__activo:hover{
+.selector__paradero__activo:hover {
   cursor: pointer;
 }
-.selector__bip:hover{
+.selector__bip:hover {
   cursor: pointer;
 }
-.selector__bip__activo:hover{
+.selector__bip__activo:hover {
   cursor: pointer;
 }
-.selector__bip__activo{
+.selector__bip__activo {
   font-weight: 900;
 }
-.selector__tne__activo{
+.selector__tne__activo {
   font-weight: 900;
 }
-.selector__paradero__activo{
-  
-font-weight: 900;
+.selector__paradero__activo {
+  font-weight: 900;
 }
-.selector__tne__activo:hover{
+.selector__tne__activo:hover {
   cursor: pointer;
 }
-.selector__tne:hover{
+.selector__tne:hover {
   cursor: pointer;
 }
-.selector__paradero{
+.selector__paradero {
   cursor: pointer;
 }
-.page__content{
+.page__content {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.background{
-  
+.background {
   position: flex;
   padding-top: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-.bip{
+.bip {
   border: 1px solid #285ea1;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 10px;
   margin-top: -12.3rem !important;
   width: 17rem;
   height: 12.3rem;
-  background-color: #2D6AB7;
-  margin-left:3.4rem;
-}   
-.borde{
-  
+  background-color: #2d6ab7;
+  margin-left: 3.4rem;
+}
+.borde {
   margin-top: -24rem !important;
   border: 1px solid #285ea1;
   background-color: #ffffff;
@@ -147,99 +139,112 @@ font-weight: 900;
   margin: 0 auto;
   box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.3);
 }
-.background-form{
-
+.background-form {
   margin-top: 5rem !important;
   margin: 0 auto;
   width: 27rem;
   height: 18rem;
   border-radius: 3px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 5px;
   box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.15);
   border: 1px solid #d1d1d1;
-  
 }
-.form{
-  margin-top: 3rem !important;
-  width: 23rem;
-  height: 12.3rem;
+.background-buses {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 5rem !important;
   margin: 0 auto;
-text-align: center;
+  width: 25rem;
+  /* height: 4rem; */
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d1d1d1;
+}
+.parada__title {
+  display: flex;
+  flex-direction: column;
 }
 
-.bip-text{
-  margin-left: 20px ;
-  font-weight: 900;
-  font-size: 6.5rem;
-  color:#F1A93A;
+.form {
+  margin-top: 3rem !important;
+  width: 23rem;
+  /* height: 12.3rem; */
+  margin: 0 auto;
   text-align: center;
 }
-.bip__number{
-  margin-left: 20px ;
-  font-family: 'TT Commons' ;
+
+.bip-text {
+  margin-left: 20px;
+  font-weight: 900;
+  font-size: 6.5rem;
+  color: #f1a93a;
+  text-align: center;
+}
+.bip__number {
+  margin-left: 20px;
+  font-family: "TT Commons";
   margin-top: -8.5rem !important;
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
 }
-.spinner{
+.spinner {
   padding-left: 5.8rem;
 }
 
-.spinner-tne{
+.spinner-tne {
   padding-left: 6.8rem;
 }
-.num_tarjeta__container{
+.num_tarjeta__container {
   width: 10rem;
   /* position: absolute; */
   margin-left: 13.3rem;
   margin-top: 6.2rem;
 }
-.num_tarjeta{
+.num_tarjeta {
   /* position: fixed; */
-  color: #49A6E5;
+  color: #49a6e5;
   font-weight: 900;
   font-size: 1rem;
   transform: rotate(90deg);
-
 }
-.cuadro{
+.cuadro {
   border: 1px solid red;
 }
 
-.tne{
+.tne {
   margin-top: -30.2rem !important;
   border: 1px solid #88aeca;
   border-radius: 16px;
   margin: 0 auto;
   box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.3);
-  background-color: #A2CAE7;
+  background-color: #a2cae7;
   width: 20rem;
   height: 12.3rem;
 }
-.tne-text-container{
-  margin-left: 10px ;
+.tne-text-container {
+  margin-left: 10px;
   text-align: center;
   margin-top: -2rem !important;
-
 }
-.tne-text{
+.tne-text {
   font-weight: 900;
   font-size: 6.5rem;
-  color:#213478;
- 
+  color: #213478;
 }
-.tne__number{
-  margin-left: 20px ;
-  font-family: 'TT Commons' ;
+.tne__number {
+  margin-left: 20px;
+  font-family: "TT Commons";
   margin-top: -9.5rem !important;
   font-size: 2.5rem;
   text-align: center;
   color: #fff;
-
 }
-.container-code-bar{
+.container-code-bar {
   background-color: #ffffff;
   border-radius: 5px;
   display: flex;
@@ -248,83 +253,122 @@ text-align: center;
   justify-content: center;
   width: 6rem;
   margin-left: 7rem;
-  
 }
 
-.barra{
+.barra {
   width: 1.3px;
   height: 1rem;
   background-color: #000;
-  
 }
-.bar-code{
+.bar-code {
   display: flex;
   flex-direction: row;
   text-align: center;
-  justify-content: space-between ;
+  justify-content: space-between;
   width: 5rem;
   background-color: #ffffff;
   margin-top: 0.2rem;
 }
-.code-number{
+.code-number {
   text-align: center;
   height: 1.1rem;
   font-size: 11px;
 }
-.tne-number-selected{
+.tne-number-selected {
   border: 1px solid red;
 }
 
-
-.footer{
-  position:absolute;
+.footer {
+  position: absolute;
   bottom: 0;
   padding-left: 3rem;
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
-.footer p{
+.footer p {
   font-family: "Medium TTC" !important;
 }
-.footer a{
+.footer a {
   font-family: "Medium TTC" !important;
-  color: #06D6A0 !important;
+  color: #06d6a0 !important;
   text-decoration: none;
 }
 
 /* Deshabilitar autofocus */
 @media screen and (device-aspect-ratio: 2/3) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"],
-  input[type="url"]{ font-size: 16px; }
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"] {
+    font-size: 16px;
+  }
 }
 
 /* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
 @media screen and (device-aspect-ratio: 40/71) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"],
-  input[type="url"]{ font-size: 16px; }
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"] {
+    font-size: 16px;
+  }
 }
 
 /* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
 @media screen and (device-aspect-ratio: 375/667) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"], 
-  input[type="tel"], input[type="url"]{ font-size: 16px; }
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"] {
+    font-size: 16px;
+  }
 }
 
 /* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
 @media screen and (device-aspect-ratio: 9/16) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"],
-  input[type="tel"], input[type="url"]{ font-size: 16px; }
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"] {
+    font-size: 16px;
+  }
 }
