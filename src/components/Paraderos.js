@@ -41,16 +41,16 @@ function Paraderos() {
   return (
     <div className="background">
       <div className="background-form"></div>
-      <div className="borde">
+      <div className="redbus__borde">
         <div className="num_tarjeta__container">
-          <p className="num_tarjeta">
+          {/* <p className="num_tarjeta">
             N˚ Tarjeta <span className="cuadro">{numTarjeta}</span>
-          </p>
+          </p> */}
         </div>
       </div>
-      <div className="bip">
+      <div className="redbus">
         <div className="bip__content">
-          <p className="bip-text">bip!</p>
+          <p className="bip-text">RedBus</p>
         </div>
         <div className="bip__number">
           {/* {" "}
@@ -70,7 +70,7 @@ function Paraderos() {
             rules={[
               {
                 required: true,
-                message: "Por favor ingrese su número de tarjeta",
+                message: "Ingresa el código del paradero ",
               },
               { whitespace: true },
             ]}
@@ -93,7 +93,7 @@ function Paraderos() {
               style={{ background: "#06D6A0", borderColor: "#06D6A0" }}
             >
               {" "}
-              Consultar saldo <SearchOutlined />
+              Consultar buses <SearchOutlined />
             </Button>
           </Form.Item>
         </Form>

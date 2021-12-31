@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline } from "antd";
+import { ClockCircleOutlined } from "@ant-design/icons";
 
 function ParaderosView({ paradero, paradas }) {
   console.log(paradas);
@@ -19,17 +20,30 @@ function ParaderosView({ paradero, paradas }) {
             <Timeline.Item
               color={
                 service.status_description ===
-                "Fuera de horario de operacion para este paradero"
+                  "Fuera de horario de operacion para este paradero" ||
+                service.status_description ===
+                  "No hay buses que se dirijan al paradero."
                   ? "red"
                   : "green"
               }
             >
               <p key={"service" + idx}>
-                {service.id} - {service.status_description}
+                <span style={{ fontWeight: "900" }}>{service.id}</span> -{" "}
+                {service.status_description}
               </p>
               {service.buses.map((bus, idx) => (
                 <Timeline.Item color="blue">
                   <p key={service.id}>Patente {bus.id}</p>
+                  <Timeline.Item>
+                    <p key={service.id + "_metros"}>
+                      a {bus.meters_distance} metros de distancia
+                    </p>
+                  </Timeline.Item>
+                  <Timeline.Item>
+                    <p key={service.id + "_metros"}>
+                      llega en menos de {bus.max_arrival_time} minutos
+                    </p>
+                  </Timeline.Item>
                 </Timeline.Item>
               ))}
             </Timeline.Item>

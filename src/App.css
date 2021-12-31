@@ -372,3 +372,38 @@
     font-size: 16px;
   }
 }
+.redbus {
+  border: 1px solid #ac1427;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 10px;
+  margin-top: -12.3rem !important;
+  width: 17rem;
+  height: 12.3rem;
+  background-color: #ac1427;
+  margin-left: 2.5rem;
+}
+.redbus__borde {
+  margin-top: -24rem !important;
+  border: 1px solid #ac1427;
+  background-color: #ac1427;
+  width: 20rem;
+  height: 12.3rem;
+  border-radius: 16px;
+  margin: 0 auto;
+  box-shadow: 1px 10px 19px 10px rgba(0, 0, 0, 0.3);
+}
+.redbus-text {
+  margin-left: 20px;
+  font-weight: 900;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+}
+.redbus__number {
+  margin-left: 20px;
+  font-family: "TT Commons";
+  margin-top: -8.5rem !important;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
