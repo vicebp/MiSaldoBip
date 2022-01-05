@@ -1,9 +1,7 @@
 import React from "react";
 import { Timeline } from "antd";
-import { ClockCircleOutlined } from "@ant-design/icons";
 
 function ParaderosView({ paradero, paradas }) {
-  console.log(paradas);
   return (
     <div className="background-buses">
       <div className="parada__title">

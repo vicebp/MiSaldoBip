@@ -9,32 +9,28 @@ import axios from "axios";
 import ReactLoading from "react-loading";
 
 function Paraderos() {
-  const [numTarjeta, setNumTarjeta] = useState("12345XXX");
-
   const [paradas, setParadas] = useState([]);
   const [paradero, setParadero] = useState("");
   const [isParadas, setIsParadas] = useState(false);
-
-  const [loadingSaldo, setLoadingSaldo] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const onFinish = (values) => {
-    setLoadingSaldo(true);
+    setLoading(true);
     axios
       .get("https://api.xor.cl/red/bus-stop/".concat(values.paradero))
       .then(function (response) {
         message.success(response.data.status_description);
-        // let api_response = new Intl.NumberFormat(["ban", "id"]).format(
-        //   response.data.balance
-        // );
         setParadero(values.paradero);
 
         setParadas(response.data);
+        setLoading(false);
         setIsParadas(true);
-        setLoadingSaldo(false);
       })
       .catch(function (error) {
         // handle error
-        console.log(error);
+
+        message.error("Error en el paradero. Por favor Intenta denuevo.");
+        setLoading(false);
       });
   };
 
@@ -83,7 +79,7 @@ function Paraderos() {
                   style={{ color: "grey" }}
                 />
               }
-              placeholder="Paraderos"
+              placeholder="Ingresa un paradero"
             ></Input>
           </Form.Item>
           <Form.Item>
@@ -92,13 +88,19 @@ function Paraderos() {
               htmlType="submit"
               style={{ background: "#06D6A0", borderColor: "#06D6A0" }}
             >
-              {" "}
               Consultar buses <SearchOutlined />
             </Button>
           </Form.Item>
         </Form>
       </div>{" "}
-      {isParadas && <ParaderosView paradero={paradero} paradas={paradas} />}
+      {loading && (
+        <div className="spinner__paraderos">
+          <ReactLoading type={"bubbles"} color={"#000"} />
+        </div>
+      )}
+      {isParadas && !loading && (
+        <ParaderosView paradero={paradero} paradas={paradas} />
+      )}
     </div>
   );
 }

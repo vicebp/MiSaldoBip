@@ -7,6 +7,8 @@ import { message, Form, Input, Button } from "antd";
 import axios from "axios";
 import ReactLoading from "react-loading";
 
+import Footer from "./Footer";
+
 function TarjetaBip() {
   const [numTarjeta, setNumTarjeta] = useState("12345XXX");
   const [saldo, setSaldo] = useState(0);
@@ -27,7 +29,10 @@ function TarjetaBip() {
       })
       .catch(function (error) {
         // handle error
-        console.log(error);
+        message.error(
+          "El código de tu Bip! no es válido. Por favor Intenta denuevo."
+        );
+        setLoadingSaldo(false);
       });
   };
 
@@ -92,6 +97,7 @@ function TarjetaBip() {
           </Form.Item>
         </Form>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { message, Form, Input, Button } from "antd";
 
 import axios from "axios";
 import ReactLoading from "react-loading";
+import Footer from "./Footer";
 
 function TarjetaTNE() {
   const [numTarjeta, setNumTarjeta] = useState("12345XXX");
@@ -22,12 +23,13 @@ function TarjetaTNE() {
         let api_response = new Intl.NumberFormat(["ban", "id"]).format(
           response.data.balance
         );
-
         setSaldo(api_response);
       })
       .catch(function (error) {
-        // handle error
-        console.log(error);
+        message.error(
+          "El código de tu TNE no es válido. Por favor Intenta denuevo."
+        );
+        setLoadingSaldo(false);
       });
   };
 
@@ -115,6 +117,7 @@ function TarjetaTNE() {
           </Form.Item>
         </Form>
       </div>
+      <Footer />
     </div>
   );
 }

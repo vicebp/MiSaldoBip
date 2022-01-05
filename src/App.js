@@ -2,6 +2,7 @@ import "./App.css";
 import TarjetaBip from "./components/TarjetaBip";
 import TarjetaTNE from "./components/TarjetaTNE";
 import Paraderos from "./components/Paraderos";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -75,19 +76,6 @@ function App() {
         {tneSelector && <TarjetaTNE />}
         {paraderoSelector && <Paraderos />}
       </div>
-
-      {/* <footer className="footer">
-        <p>
-          Creado con {"<3"} por{" "}
-          <a className="rrss" href="https://github.com/sergiolv">
-            @SergioLV
-          </a>{" "}
-          y{" "}
-          <a className="rrss" href="https://github.com/vicebp">
-            @ViceBp
-          </a>{" "}
-        </p>
-      </footer> */}
     </div>
   );
 }

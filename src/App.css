@@ -66,6 +66,7 @@
 .selector__tarjeta {
   display: flex;
   flex-direction: row;
+  gap: 0.5rem;
   padding-left: 3.5rem;
   font-size: 1.3rem;
 }
@@ -195,6 +196,10 @@
 .spinner {
   padding-left: 5.8rem;
 }
+.spinner__paraderos {
+  padding-left: 10.5rem;
+  padding-top: 3rem;
+}
 
 .spinner-tne {
   padding-left: 6.8rem;
@@ -280,8 +285,13 @@
 
 .footer {
   position: absolute;
+  left: 0;
   bottom: 0;
-  padding-left: 3rem;
+  padding-left: 5rem;
+  margin-top: 2rem;
+  width: 100%;
+  /* overflow: hidden; */
+
   /* display: flex;
   align-items: center;
   justify-content: center; */
